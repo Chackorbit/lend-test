@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>П'ять цікавих фактів про жінок Тараса Шевченка</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>П’ять цікавих фактів про жінок Тараса Шевченка</h1>
+
+        <div class="centered-image">
+            <img src="./img/SHevchenko-Taras.jpg" width="320" alt="Фото Тараса Шевченка">
+        </div>
+
+        <p>Хоча коло однодумців Шевченка складалося переважно з чоловіків, його твори надихали і жінок. Завдяки йому
+            панночки почали читати українською мовою, адже до виходу “Кобзаря” українська література не вважалась
+            цікавою для шляхетних родин. Оксану Коваленко, подругою дитинства Шевченка, вважають його першим коханням.
+            Їй він присвятив поему “Мар’яна-черниця”. Дослідження...</p>
+
+        <p><span class="read-more" onclick="showPopup('popup1')">Читати дальше</span></p>
+
+    </div>
+
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup1')">Закрити</span>
+            <h2>Введіть адресу e-mail для доступу до повного тексту</h2>
+            <button onclick="showEmailPopup()">Ввести адресу e-mail</button>
+            <button onclick="closePopup('popup1')">Повернутись на головну</button>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup2')">Закрити</span>
+            <h2>Введіть адресу e-mail</h2>
+            <input type="email" id="emailInput" placeholder="Ваш e-mail">
+            <button onclick="sendEmail()">Надіслати</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
